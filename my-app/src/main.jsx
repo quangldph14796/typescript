@@ -14,6 +14,7 @@ ReactDOM.render(
   <div>
     <div>{showInfo({ title: "Quang" })}</div>
     <ShowInfo title="Quang" />
+    <App />
   </div>,
   root
 );
