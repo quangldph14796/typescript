@@ -21,5 +21,24 @@ function sum(numA: number, numB: number): number {
   //truyền vào kiểu dữ liệu là number, giá trị đầu ra cũng phải kiểu dữ liệu number
   return numA + numB;
 }
-
+function showInfo<X, Y>(a: X, b: Y): [X, Y] {
+  return [a, b];
+}
+showInfo(10, 20);
+showInfo("Duy", "Quang");
 sum(a, b);
+
+//Generic
+
+type Product = {
+  id: number;
+  name: string;
+};
+const products: Product[] = [
+  { id: 1, name: "haohan A" },
+  { id: 2, name: "haohan B" },
+];
+function show<T extends Product[]>(products: T): void {
+  console.log(products);
+}
+show(products);
