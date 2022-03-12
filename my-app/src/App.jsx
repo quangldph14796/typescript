@@ -4,12 +4,7 @@ import "./App.css";
 import ShowInfo from "./components/ShowInfo";
 
 function App() {
-  // const products = [
-  //   { id: "1", name: "product A" },
-  //   { id: "2", name: "product B" },
-  //   { id: "3", name: "product C" },
-  // ];
-  count[(count, setCount)] = useState(0);
+  const [count, setCount] = useState(0);
   const [products, setProducts] = useState([
     { id: "1", name: "product A" },
     { id: "2", name: "product B" },
@@ -27,5 +22,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
