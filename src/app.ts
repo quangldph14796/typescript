@@ -24,7 +24,7 @@ function sum(numA: number, numB: number): number {
 function showInfo<X, Y>(a: X, b: Y): [X, Y] {
   return [a, b];
 }
-showInfo(10, 20);
+showInfo(10, 30);
 showInfo("Duy", "Quang");
 sum(a, b);
 
